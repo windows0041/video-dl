@@ -1,0 +1,11 @@
+services:
+  video-dl:
+    build: .
+    container_name: video-dl
+    ports:
+      - "8734:8734"          # 左边是宿主机端口,想换就改左边(如 9000:8734)
+    volumes:
+      - ./downloads:/app/downloads   # 下载的文件持久化到本目录
+    environment:
+      - PORT=8734
+    restart: unless-stopped

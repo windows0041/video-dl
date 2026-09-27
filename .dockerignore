@@ -1,0 +1,10 @@
+# 不打包进镜像的东西
+downloads
+tmp
+tools
+node_modules
+.git
+*.md
+启动视频下载器.bat
+start.sh
+docker-compose.yml
